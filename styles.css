@@ -1,0 +1,105 @@
+/* Luxury Editorial Styling for Seven Palm Interio */
+
+@keyframes subtleZoom {
+  0% {
+    transform: scale(1.0);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1.0);
+  }
+}
+
+.animate-subtle-zoom {
+  animation: subtleZoom 25s ease-in-out infinite alternate;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #0f0e0d;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2622;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B29354;
+}
+
+/* Filter Buttons */
+.filter-btn {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  color: #a8a29e;
+}
+
+.filter-btn:hover {
+  border-color: rgba(197, 172, 117, 0.5);
+  color: #FAF8F5;
+}
+
+.filter-btn.active {
+  background: #C5AC75;
+  color: #0c0a09;
+  border-color: #C5AC75;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(197, 172, 117, 0.25);
+}
+
+/* Interactive Before/After Sliders */
+.before-after-container {
+  touch-action: pan-y;
+}
+
+.before-image-wrap {
+  width: 50%;
+  transition: none;
+}
+
+.slider-handle {
+  transition: none;
+}
+
+/* Style Quiz selection cards */
+.style-card.active {
+  border-color: #C5AC75 !important;
+  background-color: rgba(197, 172, 117, 0.12) !important;
+}
+
+.space-btn.active {
+  border-color: #C5AC75 !important;
+  background-color: rgba(197, 172, 117, 0.2) !important;
+  color: #ffffff !important;
+}
+
+/* Radio buttons inside wizard */
+.consult-radio-label:has(input:checked) {
+  border-color: #C5AC75 !important;
+  background-color: rgba(197, 172, 117, 0.15) !important;
+}
+
+.consult-radio-label:has(input:checked) span:first-of-type {
+  color: #E7DCB9 !important;
+}
+
+/* Smooth modal transition */
+#caseStudyModal {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
